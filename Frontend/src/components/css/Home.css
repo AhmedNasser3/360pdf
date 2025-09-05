@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+body{
+    background-color: #fafafa;
+}
+:root {
+  /* 🎨 General Colors */
+  --color-bg-gradient-start: #e0e7ff;
+  --color-bg-gradient-end: #f5f7ff;
+  --color-form-bg: #ffffff;
+  --color-primary: #f16382;
+  --color-primary-dark: #e5469d;
+  --color-border: #e5e7eb;
+  --color-shadow: rgba(0, 0, 0, 0.08);
+  --color-input-focus: #f163aa80;
+  --color-text: #1f2937;
+  --color-link: #f16399;
+  --color-white: #ffffff;
+  --color-bg-fade-start: #f9fafb;
+
+  /* 🟣 Brand & Primary */
+  --primary-color: #ed3a76;
+  --primary-color-light: #fa8bac;
+  --primary-color-dark: #d92840;
+
+  /* 🖋️ Text & Typography */
+  --text-color: #1f2937;
+  --text-color-dark: #111827;
+  --text-color-light: #6b7280;
+
+  /* 🎨 Backgrounds */
+  --bg-light: #f9fafb;
+  --bg-white: #ffffff;
+  --bg-gradient-start: #e0e7ff;
+  --bg-gradient-end: #f5f7ff;
+  --bg-fade-start: #f9fafb;
+
+  /* 🧱 Borders & Shadows */
+  --border-color: #e5e7eb;
+  --border-color-light: #f3f4f6;
+  --shadow-color: rgba(0, 0, 0, 0.08);
+  --sidebar-shadow: rgba(0, 0, 0, 0.04);
+  --overlay-bg: rgba(0, 0, 0, 0.3);
+
+  /* ✍️ Input & Focus */
+  --input-focus: rgba(99, 102, 241, 0.5);
+
+  /* 💡 Hover / UI */
+  --hover-bg: #eef2ff;
+
+  /* 🎯 Icons */
+  --icon-red: #ef4444;
+  --icon-green: #10b981;
+  --icon-orange: #f59e0b;
+  --icon-purple: #8b5cf6;
+  --icon-blue: #f63b64;
+  --icon-close: #dc2626;
+
+  /* 🔗 Buttons & Links */
+  --link-color: #f1639e;
+  --white: #ffffff;
+}
+
+
+/* main_home */
+.main_home{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_title{
+    max-width: 65%;
+    text-align: center;
+}
+.main_title h1 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+}
+.main_title h3 {
+    font-weight: 100;
+    color: var(--text-color-light);
+}
+/* boxes_option */
+.boxes_option {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxes_option_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.boxes_option_btns {
+    cursor: pointer;
+    border-radius: 100px;
+    padding: 10px 20px ;
+    border: 1px solid var(--border-color);
+    background-color: var(--white);
+}
+.boxes_option_btns:hover {
+    border-radius: 100px;
+    padding: 10px 20px ;
+    border: 1px solid var(--text-color-dark);
+    background-color: var(--text-color-dark);
+    color: var(--white);
+}
+/* boxes */
+.boxes {
+    padding: 0 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+.boxes_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+.boxes_content {
+    padding: 30px;
+    width: 300px;
+    height: 250px;
+    border: 1px solid var(--border-color);
+    background-color: var(--white);
+    border-radius: 20px;
+}
+.boxes_titles {
+    color: #131313;
+    max-width: 200px;
+}
+.boxes_titles p{
+    color: var(--text-color-light);
+}
+.boxes_icon {
+    font-size: 50px;
+}
+/* البوكس العادي */
+.boxes_content {
+    padding: 30px;
+    width: 300px;
+    height: 250px;
+    border: 1px solid var(--border-color);
+    background-color: var(--white);
+    border-radius: 20px;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+/* البوكس اللي لسه مش جاهز */
+.coming-soon {
+    background-color: #e0e0e0; /* رمادي */
+    border: 1px solid #bdbdbd;
+    opacity: 0.8;
+    pointer-events: none; /* يخلي البوكس مش clickable */
+}
+
+/* الكتابة "Coming Soon" */
+.coming-text {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #757575;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: bold;
+}
